@@ -49,7 +49,7 @@
   $ docker compose run web rake db:create
   ```
 
-  5 If you are running the project locally
+  4. If you are running the project locally
 
   4.1 Create database:
   ```bash
