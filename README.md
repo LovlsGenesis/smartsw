@@ -27,9 +27,9 @@
 
 ### 3. Initialize the project
 
-  If you are using Docker Compose follow these next steps:
+  3. If you are using Docker Compose follow these next steps:
 
-    Build Docker Image:
+    3.1 Build Docker Image:
     ```bash
     $ docker build -t smartsw-ruby .
     ```
@@ -39,36 +39,36 @@
     $ docker compose up
     ```
 
-    Create database:
+    3.2 Create database:
     ```bash
     $ docker compose run web rake db:create
     ```
 
-    Run migrations:
+    3.3 Run migrations:
     ```bash
     $ docker compose run web rake db:create
     ```
 
-  If you are running the project locally
+  5 If you are running the project locally
 
-    Create database:
+    4.1 Create database:
     ```bash
     $ rake db:create
     ```
 
-    Run the migrations:
+    4.2 Run the migrations:
     ```bash
     $ rake db:migrate
     ```
 
-    Initialize the project
+    4.3 Initialize the project
     ```bash
     $ rails s
     ```
 
-### 4. Run Tests
+### 5. Run Tests
 
-  4.1 To run the code with Docker Compose:
+  5.1 To run the code with Docker Compose:
   ```bash
   $ docker compose run web rspec
   ```
